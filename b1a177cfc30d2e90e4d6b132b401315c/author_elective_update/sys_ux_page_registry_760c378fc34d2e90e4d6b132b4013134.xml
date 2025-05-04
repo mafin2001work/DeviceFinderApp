@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_page_registry">
+    <sys_ux_page_registry action="DELETE">
+        <active>true</active>
+        <admin_panel>b60cb74bc34d2e90e4d6b132b40131d8</admin_panel>
+        <admin_panel_table>sys_ux_app_config</admin_panel_table>
+        <auth_routes/>
+        <page/>
+        <parent_app display_value="UXR Base Unified App">c4b650c2c702201072b211d4d8c260a4</parent_app>
+        <path>devicefinderapplication</path>
+        <root_macroponent display_value="Header App Shell">9d9670b0c30320109fe6a0f89d40dd97</root_macroponent>
+        <sys_class_name>sys_ux_page_registry</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-26 15:55:44</sys_created_on>
+        <sys_id>760c378fc34d2e90e4d6b132b4013134</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>DeviceFinderApplication</sys_name>
+        <sys_package display_value="DeviceFinder" source="x_1639660_devicefi">b1a177cfc30d2e90e4d6b132b401315c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DeviceFinder">b1a177cfc30d2e90e4d6b132b401315c</sys_scope>
+        <sys_update_name>sys_ux_page_registry_760c378fc34d2e90e4d6b132b4013134</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-26 15:55:44</sys_updated_on>
+        <title>DeviceFinderApplication</title>
+    </sys_ux_page_registry>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="DeviceFinder">b1a177cfc30d2e90e4d6b132b401315c</application>
+        <file_path/>
+        <instance_id>9bc4f8b9dbb93d58caf99027c5961905</instance_id>
+        <instance_name>dev182468</instance_name>
+        <name>sys_ux_page_registry_760c378fc34d2e90e4d6b132b4013134</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_page_registry"><sys_ux_page_registry action="INSERT_OR_UPDATE"><active>true</active><admin_panel>b60cb74bc34d2e90e4d6b132b40131d8</admin_panel><admin_panel_table>sys_ux_app_config</admin_panel_table><auth_routes/><page/><parent_app display_value="UXR Base Unified App">c4b650c2c702201072b211d4d8c260a4</parent_app><path>devicefinderapplication</path><root_macroponent display_value="Header App Shell">9d9670b0c30320109fe6a0f89d40dd97</root_macroponent><sys_class_name>sys_ux_page_registry</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-04-26 15:55:44</sys_created_on><sys_id>760c378fc34d2e90e4d6b132b4013134</sys_id><sys_mod_count>0</sys_mod_count><sys_name>DeviceFinderApplication</sys_name><sys_package display_value="DeviceFinder" source="x_1639660_devicefi">b1a177cfc30d2e90e4d6b132b401315c</sys_package><sys_policy/><sys_scope display_value="DeviceFinder">b1a177cfc30d2e90e4d6b132b401315c</sys_scope><sys_update_name>sys_ux_page_registry_760c378fc34d2e90e4d6b132b4013134</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-04-26 15:55:44</sys_updated_on><title>DeviceFinderApplication</title></sys_ux_page_registry></record_update>]]></payload>
+        <payload_hash>-347148659</payload_hash>
+        <record_name>DeviceFinderApplication</record_name>
+        <reverted_from/>
+        <source>4c257307c34d2e90e4d6b132b40131df</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-26 15:55:44</sys_created_on>
+        <sys_id>f20c378fc34d2e90e4d6b132b4013138</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19672cfd2390000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-26 15:55:44</sys_updated_on>
+        <type>UX Application</type>
+        <update_guid>f60c378ff54d2e90df01697079e9a037</update_guid>
+        <update_guid_history>f60c378ff54d2e90df01697079e9a037:-347148659</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-01 13:21:09</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_page_registry">sys_ux_page_registry</sys_db_object>
+        <sys_id>1455d918928848489d340a1f948e9524</sys_id>
+        <sys_metadata>760c378fc34d2e90e4d6b132b4013134</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>DeviceFinderApplication</sys_name>
+        <sys_package display_value="DeviceFinder" source="x_1639660_devicefi">b1a177cfc30d2e90e4d6b132b401315c</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="DeviceFinder">b1a177cfc30d2e90e4d6b132b401315c</sys_scope>
+        <sys_scope_delete display_value="">6545a4109fe84ebc91771d1bbf7bf790</sys_scope_delete>
+        <sys_update_name>sys_ux_page_registry_760c378fc34d2e90e4d6b132b4013134</sys_update_name>
+        <sys_update_version display_value="sys_ux_page_registry_760c378fc34d2e90e4d6b132b4013134">f20c378fc34d2e90e4d6b132b4013138</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-01 13:21:09</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

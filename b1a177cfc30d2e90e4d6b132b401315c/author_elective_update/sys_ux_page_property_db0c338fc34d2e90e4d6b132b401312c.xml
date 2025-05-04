@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="DELETE">
+        <choices/>
+        <description/>
+        <name>chrome_header</name>
+        <page display_value="DeviceFinderApplication">760c378fc34d2e90e4d6b132b4013134</page>
+        <required_translations>[ ]</required_translations>
+        <route/>
+        <suffix/>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-26 15:55:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>global</sys_domain_path>
+        <sys_id>db0c338fc34d2e90e4d6b132b401312c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>chrome_header</sys_name>
+        <sys_package display_value="DeviceFinder" source="x_1639660_devicefi">b1a177cfc30d2e90e4d6b132b401315c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DeviceFinder">b1a177cfc30d2e90e4d6b132b401315c</sys_scope>
+        <sys_update_name>sys_ux_page_property_db0c338fc34d2e90e4d6b132b401312c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-26 15:55:46</sys_updated_on>
+        <type>json</type>
+        <unique_name>x_1639660_devicefi.760c378fc34d2e90e4d6b132b4013134.root.global.chrome_header</unique_name>
+        <value>{
+    "privatePage": {
+        "userPrefsEnabled": false,
+        "searchEnabled": false,
+        "currentScreenLinkConfiguration": {},
+        "globalTools": {
+            "collapsingMenuId": 0,
+            "primaryItems": [],
+            "secondaryItems": []
+        }
+    },
+    "publicPage": {
+        "menuEnabled": false,
+        "searchEnabled": false,
+        "logoRoute": {},
+        "actionButtons": []
+    }
+}</value>
+    </sys_ux_page_property>
+    <sys_translated_text action="DELETE" query="documentkey=db0c338fc34d2e90e4d6b132b401312c"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="DeviceFinder">b1a177cfc30d2e90e4d6b132b401315c</application>
+        <file_path/>
+        <instance_id>9bc4f8b9dbb93d58caf99027c5961905</instance_id>
+        <instance_name>dev182468</instance_name>
+        <name>sys_ux_page_property_db0c338fc34d2e90e4d6b132b401312c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property"><sys_ux_page_property action="INSERT_OR_UPDATE"><choices/><description/><name>chrome_header</name><page display_value="DeviceFinderApplication">760c378fc34d2e90e4d6b132b4013134</page><required_translations>[ ]</required_translations><route/><suffix/><sys_class_name>sys_ux_page_property</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-04-26 15:55:46</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>global</sys_domain_path><sys_id>db0c338fc34d2e90e4d6b132b401312c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>chrome_header</sys_name><sys_package display_value="DeviceFinder" source="x_1639660_devicefi">b1a177cfc30d2e90e4d6b132b401315c</sys_package><sys_policy/><sys_scope display_value="DeviceFinder">b1a177cfc30d2e90e4d6b132b401315c</sys_scope><sys_update_name>sys_ux_page_property_db0c338fc34d2e90e4d6b132b401312c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-04-26 15:55:46</sys_updated_on><type>json</type><unique_name>x_1639660_devicefi.760c378fc34d2e90e4d6b132b4013134.root.global.chrome_header</unique_name><value>{
+    "privatePage": {
+        "userPrefsEnabled": false,
+        "searchEnabled": false,
+        "currentScreenLinkConfiguration": {},
+        "globalTools": {
+            "collapsingMenuId": 0,
+            "primaryItems": [],
+            "secondaryItems": []
+        }
+    },
+    "publicPage": {
+        "menuEnabled": false,
+        "searchEnabled": false,
+        "logoRoute": {},
+        "actionButtons": []
+    }
+}</value></sys_ux_page_property><sys_translated_text action="delete_multiple" query="documentkey=db0c338fc34d2e90e4d6b132b401312c"/></record_update>]]></payload>
+        <payload_hash>-1836786401</payload_hash>
+        <record_name>chrome_header</record_name>
+        <reverted_from/>
+        <source>4c257307c34d2e90e4d6b132b40131df</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-26 15:55:46</sys_created_on>
+        <sys_id>5f0c338fc34d2e90e4d6b132b401312f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19672cfdb0e0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-26 15:55:46</sys_updated_on>
+        <type>UX Page Property</type>
+        <update_guid>530c338f4e4d2e901646f21d76d1702f</update_guid>
+        <update_guid_history>530c338f4e4d2e901646f21d76d1702f:-1836786401</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-01 13:21:09</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_page_property">sys_ux_page_property</sys_db_object>
+        <sys_id>2e8a366d292f48028bf8088b47f2c2e4</sys_id>
+        <sys_metadata>db0c338fc34d2e90e4d6b132b401312c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>chrome_header</sys_name>
+        <sys_package display_value="DeviceFinder" source="x_1639660_devicefi">b1a177cfc30d2e90e4d6b132b401315c</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="DeviceFinder">b1a177cfc30d2e90e4d6b132b401315c</sys_scope>
+        <sys_scope_delete display_value="">6545a4109fe84ebc91771d1bbf7bf790</sys_scope_delete>
+        <sys_update_name>sys_ux_page_property_db0c338fc34d2e90e4d6b132b401312c</sys_update_name>
+        <sys_update_version display_value="sys_ux_page_property_db0c338fc34d2e90e4d6b132b401312c">5f0c338fc34d2e90e4d6b132b401312f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-01 13:21:09</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
