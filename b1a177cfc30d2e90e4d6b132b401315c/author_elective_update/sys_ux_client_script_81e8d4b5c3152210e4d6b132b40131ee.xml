@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Default">f0d4c1b0c3512210e4d6b132b4013143</macroponent>
+        <name>New client script 1</name>
+        <preset/>
+        <required_translations>[]</required_translations>
+        <script><![CDATA[function onLoad() {
+    // User-Agent des Browsers abrufen
+    var userAgent = navigator.userAgent;
+
+    // Überprüfen, ob der User-Agent auf ein Apple-Betriebssystem hinweist
+    if (userAgent.indexOf("Macintosh") !== -1) {
+        // Wenn es sich um einen Apple-Computer handelt, den Client State Parameter auf true setzen
+        api.setState('isAppleDevice', true);
+    } else {
+        // Wenn es sich nicht um einen Apple-Computer handelt, den Client State Parameter auf false setzen
+        api.setState('isAppleDevice', false);
+    }
+}
+]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-04 13:02:55</sys_created_on>
+        <sys_id>81e8d4b5c3152210e4d6b132b40131ee</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>New client script 1</sys_name>
+        <sys_package display_value="DeviceFinder" source="x_1639660_devicefi">b1a177cfc30d2e90e4d6b132b401315c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DeviceFinder">b1a177cfc30d2e90e4d6b132b401315c</sys_scope>
+        <sys_update_name>sys_ux_client_script_81e8d4b5c3152210e4d6b132b40131ee</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-04 13:02:55</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="DeviceFinder">b1a177cfc30d2e90e4d6b132b401315c</application>
+        <file_path/>
+        <instance_id>9bc4f8b9dbb93d58caf99027c5961905</instance_id>
+        <instance_name>dev182468</instance_name>
+        <name>sys_ux_client_script_81e8d4b5c3152210e4d6b132b40131ee</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;controller_preset/&gt;&lt;includes/&gt;&lt;macroponent display_value="Default"&gt;f0d4c1b0c3512210e4d6b132b4013143&lt;/macroponent&gt;&lt;name&gt;New client script 1&lt;/name&gt;&lt;preset/&gt;&lt;required_translations&gt;[]&lt;/required_translations&gt;&lt;script&gt;&lt;![CDATA[function onLoad() {
+    // User-Agent des Browsers abrufen
+    var userAgent = navigator.userAgent;
+
+    // Überprüfen, ob der User-Agent auf ein Apple-Betriebssystem hinweist
+    if (userAgent.indexOf("Macintosh") !== -1) {
+        // Wenn es sich um einen Apple-Computer handelt, den Client State Parameter auf true setzen
+        api.setState('isAppleDevice', true);
+    } else {
+        // Wenn es sich nicht um einen Apple-Computer handelt, den Client State Parameter auf false setzen
+        api.setState('isAppleDevice', false);
+    }
+}
+]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-04 13:02:55&lt;/sys_created_on&gt;&lt;sys_id&gt;81e8d4b5c3152210e4d6b132b40131ee&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;New client script 1&lt;/sys_name&gt;&lt;sys_package display_value="DeviceFinder" source="x_1639660_devicefi"&gt;b1a177cfc30d2e90e4d6b132b401315c&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="DeviceFinder"&gt;b1a177cfc30d2e90e4d6b132b401315c&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_81e8d4b5c3152210e4d6b132b40131ee&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-04 13:02:55&lt;/sys_updated_on&gt;&lt;target&gt;macroponent&lt;/target&gt;&lt;type&gt;default&lt;/type&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>2010083867</payload_hash>
+        <record_name>New client script 1</record_name>
+        <reverted_from/>
+        <source>74680538c3512210e4d6b132b4013168</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-04 13:02:55</sys_created_on>
+        <sys_id>5531a871c3552210e4d6b132b4013123</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1969b647be00000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-04 13:02:55</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>5931a8715b55221099adf6d06dd7d422</update_guid>
+        <update_guid_history>5931a8715b55221099adf6d06dd7d422:2010083867</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-04 13:04:37</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>2aa4fd7a2c1b4ca48f729460807d2a10</sys_id>
+        <sys_metadata>81e8d4b5c3152210e4d6b132b40131ee</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>New client script 1</sys_name>
+        <sys_package display_value="DeviceFinder" source="x_1639660_devicefi">b1a177cfc30d2e90e4d6b132b401315c</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="DeviceFinder">b1a177cfc30d2e90e4d6b132b401315c</sys_scope>
+        <sys_scope_delete display_value="">6545a4109fe84ebc91771d1bbf7bf790</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_81e8d4b5c3152210e4d6b132b40131ee</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_81e8d4b5c3152210e4d6b132b40131ee">5531a871c3552210e4d6b132b4013123</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-04 13:04:37</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
