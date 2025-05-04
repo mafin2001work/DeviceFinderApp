@@ -2161,6 +2161,184 @@
                 "display": "contents"
             }
         }
+    },
+    {
+        "definition": {
+            "id": "d356d14b6e293a3020a244b63d278d8f",
+            "type": "MACROPONENT"
+        },
+        "elementId": "column_layout_3",
+        "elementLabel": "Column layout 3",
+        "eventMappings": [],
+        "isHidden": {
+            "type": "JSON_LITERAL",
+            "value": null
+        },
+        "overrides": {
+            "composition": [
+                {
+                    "definition": {
+                        "id": "d356d14b6e293a3020a244b63d278d8f",
+                        "type": "MACROPONENT"
+                    },
+                    "elementId": "__GHwDjvRiiAkffSjjeeddAJqRffeeddZwSd__column_1",
+                    "elementLabel": "Column 1",
+                    "eventMappings": [],
+                    "isHidden": {
+                        "type": "JSON_LITERAL",
+                        "value": null
+                    },
+                    "overrides": {
+                        "composition": [],
+                        "layout": {
+                            "default": {
+                                "children": null,
+                                "items": [],
+                                "root": null,
+                                "styles": {
+                                    "align-items": "stretch",
+                                    "box-sizing": "border-box",
+                                    "flex-direction": "column",
+                                    "height": "100%",
+                                    "justify-content": "flex-start",
+                                    "overflow": "auto"
+                                },
+                                "type": "flex"
+                            },
+                            "disableAutoReflow": true,
+                            "version": "3.1.0"
+                        }
+                    },
+                    "preset": null,
+                    "propertyValues": {
+                        "hideEmptyStateUi": {
+                            "type": "JSON_LITERAL",
+                            "value": true
+                        },
+                        "slotWrapperBehavior": {
+                            "type": "JSON_LITERAL",
+                            "value": "contents"
+                        }
+                    },
+                    "scratchPad": {
+                        "uib": {
+                            "layout": {
+                                "column": {
+                                    "columnNumber": 0,
+                                    "id": "default",
+                                    "styleConfig": {
+                                        "external": {},
+                                        "internal": {}
+                                    }
+                                },
+                                "type": "column"
+                            },
+                            "version": "1.0.0"
+                        }
+                    },
+                    "slot": null,
+                    "styles": {
+                        "default": {
+                            "display": "contents"
+                        }
+                    }
+                }
+            ],
+            "layout": {
+                "default": {
+                    "children": null,
+                    "isInline": null,
+                    "items": [
+                        {
+                            "element_id": "__GHwDjvRiiAkffSjjeeddAJqRffeeddZwSd__column_1"
+                        }
+                    ],
+                    "root": null,
+                    "rules": null,
+                    "styles": {
+                        "box-sizing": "border-box",
+                        "grid-template-columns": "100fr",
+                        "grid-template-rows": "1fr",
+                        "width": "auto"
+                    },
+                    "type": "grid"
+                },
+                "disableAutoReflow": true,
+                "queries": [
+                    {
+                        "layout": {
+                            "children": null,
+                            "isInline": null,
+                            "items": [],
+                            "root": null,
+                            "rules": null,
+                            "styles": {
+                                "grid-template-columns": "1fr",
+                                "height": "fit-content",
+                                "max-height": "max-content",
+                                "min-height": "min-content"
+                            },
+                            "type": "grid"
+                        },
+                        "query": {
+                            "max-width": 640
+                        }
+                    }
+                ],
+                "version": "3.1.0"
+            }
+        },
+        "preset": null,
+        "propertyValues": {
+            "hideEmptyStateUi": {
+                "type": "JSON_LITERAL",
+                "value": true
+            },
+            "slotWrapperBehavior": {
+                "type": "JSON_LITERAL",
+                "value": "contents"
+            }
+        },
+        "scratchPad": {
+            "uib": {
+                "layout": {
+                    "columnSection": {
+                        "breakpoints": [
+                            {
+                                "behavior": "stack",
+                                "max-width": 640,
+                                "styles": {
+                                    "grid-template-columns": "1fr",
+                                    "height": "fit-content",
+                                    "max-height": "max-content",
+                                    "min-height": "min-content"
+                                }
+                            }
+                        ],
+                        "children": [
+                            {
+                                "columnNumber": 1,
+                                "unit": "%",
+                                "width": 100
+                            }
+                        ],
+                        "id": "UIB_COLUMN_SECTION_SINGLE_COLUMN_SECTION",
+                        "styleConfig": {
+                            "external": {},
+                            "internal": {}
+                        }
+                    },
+                    "type": "columnSection"
+                },
+                "version": "1.0.0"
+            }
+        },
+        "slot": null,
+        "styles": {
+            "default": {
+                "display": "contents"
+            }
+        }
     }
 ]</composition>
         <da_relay_models/>
@@ -2172,7 +2350,91 @@
         },
         "elementId": "look_up_hardware",
         "elementLabel": "HardwareLookUp",
-        "eventMappings": [],
+        "eventMappings": [
+            {
+                "eventMappingId": "eeqeIVPuXDaaNxjjhsGyeNCDddki",
+                "isConfiguration": false,
+                "offRowStorageId": null,
+                "sourceEventApiName": "sn_uxf.DATA_FETCH_SUCCEEDED",
+                "sourceEventCorrelationId": null,
+                "sourceEventDefinition": {
+                    "apiName": "sn_uxf.DATA_FETCH_SUCCEEDED",
+                    "id": null,
+                    "type": "UXEVENT"
+                },
+                "sourceEventSysId": null,
+                "targets": [
+                    {
+                        "broker": null,
+                        "clientScript": null,
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": {
+                            "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                            "payload": {
+                                "container": {
+                                    "propName": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "isAppleDevice"
+                                    },
+                                    "value": {
+                                        "transform": {
+                                            "operands": {
+                                                "container": [
+                                                    {
+                                                        "transform": {
+                                                            "operands": {
+                                                                "container": [
+                                                                    {
+                                                                        "binding": {
+                                                                            "address": [
+                                                                                "look_up_hardware",
+                                                                                "results",
+                                                                                "0",
+                                                                                "_row_data",
+                                                                                "displayValue"
+                                                                            ]
+                                                                        },
+                                                                        "type": "DATA_OUTPUT_BINDING"
+                                                                    },
+                                                                    {
+                                                                        "type": "JSON_LITERAL",
+                                                                        "value": "Apple"
+                                                                    }
+                                                                ],
+                                                                "type": "LIST_CONTAINER"
+                                                            },
+                                                            "operator": "INCLUDES"
+                                                        },
+                                                        "type": "CLIENT_TRANSFORM"
+                                                    },
+                                                    {
+                                                        "type": "JSON_LITERAL",
+                                                        "value": true
+                                                    },
+                                                    {
+                                                        "type": "JSON_LITERAL",
+                                                        "value": false
+                                                    }
+                                                ],
+                                                "type": "LIST_CONTAINER"
+                                            },
+                                            "operator": "IF"
+                                        },
+                                        "type": "CLIENT_TRANSFORM"
+                                    }
+                                },
+                                "type": "MAP_CONTAINER"
+                            },
+                            "sysId": "32408b42ff7a10109046e490703bf176"
+                        },
+                        "operation": null,
+                        "targetId": "ffOgNbeehhhhaAEEZjjUgNnhcvEHMU",
+                        "type": "EVENT"
+                    }
+                ]
+            }
+        ],
         "inputValues": {
             "encodedQuery": {
                 "type": "JSON_LITERAL",
@@ -2245,6 +2507,9 @@
             },
             {
                 "element_id": "BetriebssystemAuswahl"
+            },
+            {
+                "element_id": "column_layout_3"
             }
         ],
         "root": null,
@@ -2352,14 +2617,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-05-01 13:04:37</sys_created_on>
         <sys_id>f0d4c1b0c3512210e4d6b132b4013143</sys_id>
-        <sys_mod_count>71</sys_mod_count>
+        <sys_mod_count>74</sys_mod_count>
         <sys_name>Default</sys_name>
         <sys_package display_value="DeviceFinder" source="x_1639660_devicefi">b1a177cfc30d2e90e4d6b132b401315c</sys_package>
         <sys_policy/>
         <sys_scope display_value="DeviceFinder">b1a177cfc30d2e90e4d6b132b401315c</sys_scope>
         <sys_update_name>sys_ux_macroponent_f0d4c1b0c3512210e4d6b132b4013143</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-05-04 13:15:15</sys_updated_on>
+        <sys_updated_on>2025-05-04 13:39:46</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=f0d4c1b0c3512210e4d6b132b4013143"/>
 </record_update>
