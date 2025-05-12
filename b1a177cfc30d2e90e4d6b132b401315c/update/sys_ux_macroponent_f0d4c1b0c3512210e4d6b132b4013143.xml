@@ -177,7 +177,7 @@
                                     },
                                     "icon": {
                                         "type": "JSON_LITERAL",
-                                        "value": "circle-check-outline"
+                                        "value": "verify-person-outline"
                                     },
                                     "iconStatus": {
                                         "type": "JSON_LITERAL",
@@ -689,6 +689,41 @@
                                                 "type": "EVENT"
                                             }
                                         ]
+                                    },
+                                    {
+                                        "eventMappingId": "idDejjPQZBkveeddjjlgEccjjnaIFse",
+                                        "isConfiguration": false,
+                                        "offRowStorageId": null,
+                                        "sourceEventApiName": "confirm_message.NOW_CONFIRMATION_MESSAGE#PRIMARY_CLICKED",
+                                        "sourceEventCorrelationId": null,
+                                        "sourceEventDefinition": {
+                                            "apiName": "confirm_message.NOW_CONFIRMATION_MESSAGE#PRIMARY_CLICKED",
+                                            "id": null,
+                                            "type": "UXEVENT"
+                                        },
+                                        "sourceEventSysId": null,
+                                        "targets": [
+                                            {
+                                                "broker": null,
+                                                "clientScript": null,
+                                                "conditional": null,
+                                                "declarativeAction": null,
+                                                "event": {
+                                                    "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                                                    "payload": {
+                                                        "type": "JSON_LITERAL",
+                                                        "value": {
+                                                            "propName": "currentPage",
+                                                            "value": "BetriebssystemAuswahl"
+                                                        }
+                                                    },
+                                                    "sysId": "32408b42ff7a10109046e490703bf176"
+                                                },
+                                                "operation": null,
+                                                "targetId": "tgeepYfddhBkMQjjffABcnsxprReedd",
+                                                "type": "EVENT"
+                                            }
+                                        ]
                                     }
                                 ],
                                 "isHidden": {
@@ -756,7 +791,7 @@
                                     },
                                     "icon": {
                                         "type": "JSON_LITERAL",
-                                        "value": "circle-check-outline"
+                                        "value": "laptop-outline"
                                     },
                                     "iconStatus": {
                                         "type": "JSON_LITERAL",
@@ -962,8 +997,41 @@
         "elementLabel": "BetriebssystemAuswahl",
         "eventMappings": [],
         "isHidden": {
-            "type": "JSON_LITERAL",
-            "value": null
+            "transform": {
+                "operands": {
+                    "container": [
+                        {
+                            "operation": {
+                                "left": {
+                                    "binding": {
+                                        "address": [
+                                            "currentPage"
+                                        ]
+                                    },
+                                    "type": "STATE_BINDING"
+                                },
+                                "operator": "EQUAL",
+                                "right": {
+                                    "type": "JSON_LITERAL",
+                                    "value": "BetriebssystemAuswahl"
+                                }
+                            },
+                            "type": "BINARY"
+                        },
+                        {
+                            "type": "JSON_LITERAL",
+                            "value": false
+                        },
+                        {
+                            "type": "JSON_LITERAL",
+                            "value": true
+                        }
+                    ],
+                    "type": "LIST_CONTAINER"
+                },
+                "operator": "IF"
+            },
+            "type": "CLIENT_TRANSFORM"
         },
         "overrides": {
             "composition": [
@@ -1742,7 +1810,82 @@
                                                         },
                                                         "elementId": "button_1",
                                                         "elementLabel": "Button 1",
-                                                        "eventMappings": [],
+                                                        "eventMappings": [
+                                                            {
+                                                                "eventMappingId": "LbLyueehhELBUFZjjeeddoEpLliMYgO",
+                                                                "isConfiguration": false,
+                                                                "offRowStorageId": null,
+                                                                "sourceEventApiName": "sn_button.NOW_BUTTON#CLICKED",
+                                                                "sourceEventCorrelationId": null,
+                                                                "sourceEventDefinition": {
+                                                                    "apiName": "sn_button.NOW_BUTTON#CLICKED",
+                                                                    "id": null,
+                                                                    "type": "UXEVENT"
+                                                                },
+                                                                "sourceEventSysId": null,
+                                                                "targets": [
+                                                                    {
+                                                                        "broker": null,
+                                                                        "clientScript": null,
+                                                                        "conditional": null,
+                                                                        "declarativeAction": null,
+                                                                        "event": {
+                                                                            "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                                                                            "payload": {
+                                                                                "container": {
+                                                                                    "propName": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": "currentPage"
+                                                                                    },
+                                                                                    "value": {
+                                                                                        "transform": {
+                                                                                            "operands": {
+                                                                                                "container": [
+                                                                                                    {
+                                                                                                        "operation": {
+                                                                                                            "left": {
+                                                                                                                "binding": {
+                                                                                                                    "address": [
+                                                                                                                        "userBetriebssystem"
+                                                                                                                    ]
+                                                                                                                },
+                                                                                                                "type": "STATE_BINDING"
+                                                                                                            },
+                                                                                                            "operator": "EQUAL",
+                                                                                                            "right": {
+                                                                                                                "type": "JSON_LITERAL",
+                                                                                                                "value": "Apple"
+                                                                                                            }
+                                                                                                        },
+                                                                                                        "type": "BINARY"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "type": "JSON_LITERAL",
+                                                                                                        "value": "SoftwareCheck"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "type": "JSON_LITERAL",
+                                                                                                        "value": "tbd"
+                                                                                                    }
+                                                                                                ],
+                                                                                                "type": "LIST_CONTAINER"
+                                                                                            },
+                                                                                            "operator": "IF"
+                                                                                        },
+                                                                                        "type": "CLIENT_TRANSFORM"
+                                                                                    }
+                                                                                },
+                                                                                "type": "MAP_CONTAINER"
+                                                                            },
+                                                                            "sysId": "32408b42ff7a10109046e490703bf176"
+                                                                        },
+                                                                        "operation": null,
+                                                                        "targetId": "tueeddEbvggUDkbgjjWeeLRtOSbZqF",
+                                                                        "type": "EVENT"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ],
                                                         "isHidden": {
                                                             "type": "JSON_LITERAL",
                                                             "value": null
@@ -2167,12 +2310,45 @@
             "id": "d356d14b6e293a3020a244b63d278d8f",
             "type": "MACROPONENT"
         },
-        "elementId": "column_layout_3",
-        "elementLabel": "Column layout 3",
+        "elementId": "SoftwareCheck",
+        "elementLabel": "(opt)SoftwareCheck",
         "eventMappings": [],
         "isHidden": {
-            "type": "JSON_LITERAL",
-            "value": null
+            "transform": {
+                "operands": {
+                    "container": [
+                        {
+                            "operation": {
+                                "left": {
+                                    "binding": {
+                                        "address": [
+                                            "currentPage"
+                                        ]
+                                    },
+                                    "type": "STATE_BINDING"
+                                },
+                                "operator": "EQUAL",
+                                "right": {
+                                    "type": "JSON_LITERAL",
+                                    "value": "SoftwareCheck"
+                                }
+                            },
+                            "type": "BINARY"
+                        },
+                        {
+                            "type": "JSON_LITERAL",
+                            "value": false
+                        },
+                        {
+                            "type": "JSON_LITERAL",
+                            "value": true
+                        }
+                    ],
+                    "type": "LIST_CONTAINER"
+                },
+                "operator": "IF"
+            },
+            "type": "CLIENT_TRANSFORM"
         },
         "overrides": {
             "composition": [
@@ -2189,11 +2365,126 @@
                         "value": null
                     },
                     "overrides": {
-                        "composition": [],
+                        "composition": [
+                            {
+                                "definition": {
+                                    "id": "71f1d86e8da97cc031fc30e03896cbe1",
+                                    "type": "MACROPONENT"
+                                },
+                                "elementId": "confirmation_message_3",
+                                "elementLabel": "Confirmation message 3",
+                                "eventMappings": [
+                                    {
+                                        "eventMappingId": "rwkkDeehhcciBUUyjjwMFaaAXcgghhil",
+                                        "isConfiguration": false,
+                                        "offRowStorageId": null,
+                                        "sourceEventApiName": "confirm_message.NOW_CONFIRMATION_MESSAGE#SECONDARY_CLICKED",
+                                        "sourceEventCorrelationId": null,
+                                        "sourceEventDefinition": {
+                                            "apiName": "confirm_message.NOW_CONFIRMATION_MESSAGE#SECONDARY_CLICKED",
+                                            "id": null,
+                                            "type": "UXEVENT"
+                                        },
+                                        "sourceEventSysId": null,
+                                        "targets": [
+                                            {
+                                                "broker": null,
+                                                "clientScript": null,
+                                                "conditional": null,
+                                                "declarativeAction": null,
+                                                "event": {
+                                                    "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                                                    "payload": {
+                                                        "type": "JSON_LITERAL",
+                                                        "value": {
+                                                            "propName": "currentPage",
+                                                            "value": "BetriebssystemAuswahl"
+                                                        }
+                                                    },
+                                                    "sysId": "32408b42ff7a10109046e490703bf176"
+                                                },
+                                                "operation": null,
+                                                "targetId": "gRutFPeeeBELLjjXMJdiiKHDCaaf",
+                                                "type": "EVENT"
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "isHidden": {
+                                    "type": "JSON_LITERAL",
+                                    "value": null
+                                },
+                                "preset": null,
+                                "propertyValues": {
+                                    "caption": {
+                                        "type": "TRANSLATION_LITERAL",
+                                        "value": {
+                                            "code": null,
+                                            "comment": "",
+                                            "message": "Bitte bestätige, dass Sie keine Software benötigen die nur für Windows Geräte verfügbar ist"
+                                        }
+                                    },
+                                    "header": {
+                                        "type": "TRANSLATION_LITERAL",
+                                        "value": {
+                                            "code": null,
+                                            "comment": "",
+                                            "message": "Software Bestätigung"
+                                        }
+                                    },
+                                    "headerLevel": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "2"
+                                    },
+                                    "headerStyle": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "header-primary"
+                                    },
+                                    "icon": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "appsee-outline"
+                                    },
+                                    "iconStatus": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "info"
+                                    },
+                                    "moreInfo": {
+                                        "type": "JSON_LITERAL",
+                                        "value": ""
+                                    },
+                                    "primaryActionLabel": {
+                                        "type": "TRANSLATION_LITERAL",
+                                        "value": {
+                                            "code": null,
+                                            "comment": "",
+                                            "message": "Weiter, Ich benötige diese Software nicht"
+                                        }
+                                    },
+                                    "resolution": {
+                                        "container": {},
+                                        "type": "MAP_CONTAINER"
+                                    },
+                                    "secondaryActionLabel": {
+                                        "type": "TRANSLATION_LITERAL",
+                                        "value": {
+                                            "code": null,
+                                            "comment": "",
+                                            "message": "Zurück, Ich benötige diese Software"
+                                        }
+                                    }
+                                },
+                                "slot": null,
+                                "styles": null
+                            }
+                        ],
                         "layout": {
                             "default": {
                                 "children": null,
-                                "items": [],
+                                "items": [
+                                    {
+                                        "element_id": "confirmation_message_3"
+                                    }
+                                ],
                                 "root": null,
                                 "styles": {
                                     "align-items": "stretch",
@@ -2251,6 +2542,594 @@
                     "items": [
                         {
                             "element_id": "__GHwDjvRiiAkffSjjeeddAJqRffeeddZwSd__column_1"
+                        }
+                    ],
+                    "root": null,
+                    "rules": null,
+                    "styles": {
+                        "box-sizing": "border-box",
+                        "grid-template-columns": "100fr",
+                        "grid-template-rows": "1fr",
+                        "width": "auto"
+                    },
+                    "type": "grid"
+                },
+                "disableAutoReflow": true,
+                "queries": [
+                    {
+                        "layout": {
+                            "children": null,
+                            "isInline": null,
+                            "items": [],
+                            "root": null,
+                            "rules": null,
+                            "styles": {
+                                "grid-template-columns": "1fr",
+                                "height": "fit-content",
+                                "max-height": "max-content",
+                                "min-height": "min-content"
+                            },
+                            "type": "grid"
+                        },
+                        "query": {
+                            "max-width": 640
+                        }
+                    }
+                ],
+                "version": "3.1.0"
+            }
+        },
+        "preset": null,
+        "propertyValues": {
+            "hideEmptyStateUi": {
+                "type": "JSON_LITERAL",
+                "value": true
+            },
+            "slotWrapperBehavior": {
+                "type": "JSON_LITERAL",
+                "value": "contents"
+            }
+        },
+        "scratchPad": {
+            "uib": {
+                "layout": {
+                    "columnSection": {
+                        "breakpoints": [
+                            {
+                                "behavior": "stack",
+                                "max-width": 640,
+                                "styles": {
+                                    "grid-template-columns": "1fr",
+                                    "height": "fit-content",
+                                    "max-height": "max-content",
+                                    "min-height": "min-content"
+                                }
+                            }
+                        ],
+                        "children": [
+                            {
+                                "columnNumber": 1,
+                                "unit": "%",
+                                "width": 100
+                            }
+                        ],
+                        "id": "UIB_COLUMN_SECTION_SINGLE_COLUMN_SECTION",
+                        "styleConfig": {
+                            "external": {},
+                            "internal": {}
+                        }
+                    },
+                    "type": "columnSection"
+                },
+                "version": "1.0.0"
+            }
+        },
+        "slot": null,
+        "styles": {
+            "default": {
+                "display": "contents"
+            }
+        }
+    },
+    {
+        "definition": {
+            "id": "d356d14b6e293a3020a244b63d278d8f",
+            "type": "MACROPONENT"
+        },
+        "elementId": "WechselAufWindows",
+        "elementLabel": "(opt)WechselAufWindows",
+        "eventMappings": [],
+        "isHidden": {
+            "transform": {
+                "operands": {
+                    "container": [
+                        {
+                            "operation": {
+                                "left": {
+                                    "binding": {
+                                        "address": [
+                                            "currentPage"
+                                        ]
+                                    },
+                                    "type": "STATE_BINDING"
+                                },
+                                "operator": "EQUAL",
+                                "right": {
+                                    "type": "JSON_LITERAL",
+                                    "value": "WechselAufWindows"
+                                }
+                            },
+                            "type": "BINARY"
+                        },
+                        {
+                            "type": "JSON_LITERAL",
+                            "value": false
+                        },
+                        {
+                            "type": "JSON_LITERAL",
+                            "value": true
+                        }
+                    ],
+                    "type": "LIST_CONTAINER"
+                },
+                "operator": "IF"
+            },
+            "type": "CLIENT_TRANSFORM"
+        },
+        "overrides": {
+            "composition": [
+                {
+                    "definition": {
+                        "id": "d356d14b6e293a3020a244b63d278d8f",
+                        "type": "MACROPONENT"
+                    },
+                    "elementId": "__MUaaBAeehhEjDaabbeehhjjWgHiiweedddddEXQ__column_1",
+                    "elementLabel": "Column 1",
+                    "eventMappings": [],
+                    "isHidden": {
+                        "type": "JSON_LITERAL",
+                        "value": null
+                    },
+                    "overrides": {
+                        "composition": [
+                            {
+                                "definition": {
+                                    "id": "71f1d86e8da97cc031fc30e03896cbe1",
+                                    "type": "MACROPONENT"
+                                },
+                                "elementId": "confirmation_message_4",
+                                "elementLabel": "Confirmation message 4",
+                                "eventMappings": [],
+                                "isHidden": {
+                                    "type": "JSON_LITERAL",
+                                    "value": null
+                                },
+                                "preset": null,
+                                "propertyValues": {
+                                    "caption": {
+                                        "type": "TRANSLATION_LITERAL",
+                                        "value": {
+                                            "code": null,
+                                            "comment": "",
+                                            "message": "Sie sind dabei von einem Apple Gerät zu einem Windows Gerät zu wechseln"
+                                        }
+                                    },
+                                    "header": {
+                                        "type": "TRANSLATION_LITERAL",
+                                        "value": {
+                                            "code": null,
+                                            "comment": "",
+                                            "message": "Bestätigung Betriebssystem Wechsel"
+                                        }
+                                    },
+                                    "headerLevel": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "2"
+                                    },
+                                    "headerStyle": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "header-primary"
+                                    },
+                                    "icon": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "circle-shuffle-outline"
+                                    },
+                                    "iconStatus": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "info"
+                                    },
+                                    "moreInfo": {
+                                        "type": "TRANSLATION_LITERAL",
+                                        "value": {
+                                            "code": null,
+                                            "comment": "",
+                                            "message": "Bitte Bestätigen Sie diesen Schritt"
+                                        }
+                                    },
+                                    "primaryActionLabel": {
+                                        "type": "TRANSLATION_LITERAL",
+                                        "value": {
+                                            "code": null,
+                                            "comment": "",
+                                            "message": "Ja, Ich möchte zu Windows wechseln"
+                                        }
+                                    },
+                                    "resolution": {
+                                        "container": {},
+                                        "type": "MAP_CONTAINER"
+                                    },
+                                    "secondaryActionLabel": {
+                                        "type": "TRANSLATION_LITERAL",
+                                        "value": {
+                                            "code": null,
+                                            "comment": "",
+                                            "message": "Nein, Ich möchte nicht zu Windows wechseln"
+                                        }
+                                    }
+                                },
+                                "slot": null,
+                                "styles": null
+                            }
+                        ],
+                        "layout": {
+                            "default": {
+                                "children": null,
+                                "items": [
+                                    {
+                                        "element_id": "confirmation_message_4"
+                                    }
+                                ],
+                                "root": null,
+                                "styles": {
+                                    "align-items": "stretch",
+                                    "box-sizing": "border-box",
+                                    "flex-direction": "column",
+                                    "height": "100%",
+                                    "justify-content": "flex-start",
+                                    "overflow": "auto"
+                                },
+                                "type": "flex"
+                            },
+                            "disableAutoReflow": true,
+                            "version": "3.1.0"
+                        }
+                    },
+                    "preset": null,
+                    "propertyValues": {
+                        "hideEmptyStateUi": {
+                            "type": "JSON_LITERAL",
+                            "value": true
+                        },
+                        "slotWrapperBehavior": {
+                            "type": "JSON_LITERAL",
+                            "value": "contents"
+                        }
+                    },
+                    "scratchPad": {
+                        "uib": {
+                            "layout": {
+                                "column": {
+                                    "columnNumber": 0,
+                                    "id": "default",
+                                    "styleConfig": {
+                                        "external": {},
+                                        "internal": {}
+                                    }
+                                },
+                                "type": "column"
+                            },
+                            "version": "1.0.0"
+                        }
+                    },
+                    "slot": null,
+                    "styles": {
+                        "default": {
+                            "display": "contents"
+                        }
+                    }
+                }
+            ],
+            "layout": {
+                "default": {
+                    "children": null,
+                    "isInline": null,
+                    "items": [
+                        {
+                            "element_id": "__MUaaBAeehhEjDaabbeehhjjWgHiiweedddddEXQ__column_1"
+                        }
+                    ],
+                    "root": null,
+                    "rules": null,
+                    "styles": {
+                        "box-sizing": "border-box",
+                        "grid-template-columns": "100fr",
+                        "grid-template-rows": "1fr",
+                        "width": "auto"
+                    },
+                    "type": "grid"
+                },
+                "disableAutoReflow": true,
+                "queries": [
+                    {
+                        "layout": {
+                            "children": null,
+                            "isInline": null,
+                            "items": [],
+                            "root": null,
+                            "rules": null,
+                            "styles": {
+                                "grid-template-columns": "1fr",
+                                "height": "fit-content",
+                                "max-height": "max-content",
+                                "min-height": "min-content"
+                            },
+                            "type": "grid"
+                        },
+                        "query": {
+                            "max-width": 640
+                        }
+                    }
+                ],
+                "version": "3.1.0"
+            }
+        },
+        "preset": null,
+        "propertyValues": {
+            "hideEmptyStateUi": {
+                "type": "JSON_LITERAL",
+                "value": true
+            },
+            "slotWrapperBehavior": {
+                "type": "JSON_LITERAL",
+                "value": "contents"
+            }
+        },
+        "scratchPad": {
+            "uib": {
+                "layout": {
+                    "columnSection": {
+                        "breakpoints": [
+                            {
+                                "behavior": "stack",
+                                "max-width": 640,
+                                "styles": {
+                                    "grid-template-columns": "1fr",
+                                    "height": "fit-content",
+                                    "max-height": "max-content",
+                                    "min-height": "min-content"
+                                }
+                            }
+                        ],
+                        "children": [
+                            {
+                                "columnNumber": 1,
+                                "unit": "%",
+                                "width": 100
+                            }
+                        ],
+                        "id": "UIB_COLUMN_SECTION_SINGLE_COLUMN_SECTION",
+                        "styleConfig": {
+                            "external": {},
+                            "internal": {}
+                        }
+                    },
+                    "type": "columnSection"
+                },
+                "version": "1.0.0"
+            }
+        },
+        "slot": null,
+        "styles": {
+            "default": {
+                "display": "contents"
+            }
+        }
+    },
+    {
+        "definition": {
+            "id": "d356d14b6e293a3020a244b63d278d8f",
+            "type": "MACROPONENT"
+        },
+        "elementId": "WechselAufApple",
+        "elementLabel": "(opt)WechselAufApple",
+        "eventMappings": [],
+        "isHidden": {
+            "transform": {
+                "operands": {
+                    "container": [
+                        {
+                            "operation": {
+                                "left": {
+                                    "binding": {
+                                        "address": [
+                                            "currentPage"
+                                        ]
+                                    },
+                                    "type": "STATE_BINDING"
+                                },
+                                "operator": "EQUAL",
+                                "right": {
+                                    "type": "JSON_LITERAL",
+                                    "value": "WechselAufApple"
+                                }
+                            },
+                            "type": "BINARY"
+                        },
+                        {
+                            "type": "JSON_LITERAL",
+                            "value": false
+                        },
+                        {
+                            "type": "JSON_LITERAL",
+                            "value": true
+                        }
+                    ],
+                    "type": "LIST_CONTAINER"
+                },
+                "operator": "IF"
+            },
+            "type": "CLIENT_TRANSFORM"
+        },
+        "overrides": {
+            "composition": [
+                {
+                    "definition": {
+                        "id": "d356d14b6e293a3020a244b63d278d8f",
+                        "type": "MACROPONENT"
+                    },
+                    "elementId": "__gaadFKPNRAUfheeddJECpddVvoGTt__column_1",
+                    "elementLabel": "Column 1",
+                    "eventMappings": [],
+                    "isHidden": {
+                        "type": "JSON_LITERAL",
+                        "value": null
+                    },
+                    "overrides": {
+                        "composition": [
+                            {
+                                "definition": {
+                                    "id": "71f1d86e8da97cc031fc30e03896cbe1",
+                                    "type": "MACROPONENT"
+                                },
+                                "elementId": "confirmation_message_5",
+                                "elementLabel": "Confirmation message 5",
+                                "eventMappings": [],
+                                "isHidden": {
+                                    "type": "JSON_LITERAL",
+                                    "value": null
+                                },
+                                "preset": null,
+                                "propertyValues": {
+                                    "caption": {
+                                        "type": "TRANSLATION_LITERAL",
+                                        "value": {
+                                            "code": null,
+                                            "comment": "",
+                                            "message": "Sie sind dabei von einem Apple Gerät zu einem Apple Gerät zu wechseln"
+                                        }
+                                    },
+                                    "header": {
+                                        "type": "TRANSLATION_LITERAL",
+                                        "value": {
+                                            "code": null,
+                                            "comment": "",
+                                            "message": "Bestätigung Betriebssystem Wechsel"
+                                        }
+                                    },
+                                    "headerLevel": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "2"
+                                    },
+                                    "headerStyle": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "header-primary"
+                                    },
+                                    "icon": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "circle-shuffle-outline"
+                                    },
+                                    "iconStatus": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "info"
+                                    },
+                                    "moreInfo": {
+                                        "type": "TRANSLATION_LITERAL",
+                                        "value": {
+                                            "code": null,
+                                            "comment": "",
+                                            "message": "Bitte Bestätigen Sie diesen Schritt"
+                                        }
+                                    },
+                                    "primaryActionLabel": {
+                                        "type": "TRANSLATION_LITERAL",
+                                        "value": {
+                                            "code": null,
+                                            "comment": "",
+                                            "message": "Ja, Ich möchte zu Apple wechseln"
+                                        }
+                                    },
+                                    "resolution": {
+                                        "container": {},
+                                        "type": "MAP_CONTAINER"
+                                    },
+                                    "secondaryActionLabel": {
+                                        "type": "TRANSLATION_LITERAL",
+                                        "value": {
+                                            "code": null,
+                                            "comment": "",
+                                            "message": "Nein, Ich möchte nicht zu Apple wechseln"
+                                        }
+                                    }
+                                },
+                                "slot": null,
+                                "styles": null
+                            }
+                        ],
+                        "layout": {
+                            "default": {
+                                "children": null,
+                                "items": [
+                                    {
+                                        "element_id": "confirmation_message_5"
+                                    }
+                                ],
+                                "root": null,
+                                "styles": {
+                                    "align-items": "stretch",
+                                    "box-sizing": "border-box",
+                                    "flex-direction": "column",
+                                    "height": "100%",
+                                    "justify-content": "flex-start",
+                                    "overflow": "auto"
+                                },
+                                "type": "flex"
+                            },
+                            "disableAutoReflow": true,
+                            "version": "3.1.0"
+                        }
+                    },
+                    "preset": null,
+                    "propertyValues": {
+                        "hideEmptyStateUi": {
+                            "type": "JSON_LITERAL",
+                            "value": true
+                        },
+                        "slotWrapperBehavior": {
+                            "type": "JSON_LITERAL",
+                            "value": "contents"
+                        }
+                    },
+                    "scratchPad": {
+                        "uib": {
+                            "layout": {
+                                "column": {
+                                    "columnNumber": 0,
+                                    "id": "default",
+                                    "styleConfig": {
+                                        "external": {},
+                                        "internal": {}
+                                    }
+                                },
+                                "type": "column"
+                            },
+                            "version": "1.0.0"
+                        }
+                    },
+                    "slot": null,
+                    "styles": {
+                        "default": {
+                            "display": "contents"
+                        }
+                    }
+                }
+            ],
+            "layout": {
+                "default": {
+                    "children": null,
+                    "isInline": null,
+                    "items": [
+                        {
+                            "element_id": "__gaadFKPNRAUfheeddJECpddVvoGTt__column_1"
                         }
                     ],
                     "root": null,
@@ -2509,7 +3388,13 @@
                 "element_id": "BetriebssystemAuswahl"
             },
             {
-                "element_id": "column_layout_3"
+                "element_id": "SoftwareCheck"
+            },
+            {
+                "element_id": "WechselAufWindows"
+            },
+            {
+                "element_id": "WechselAufApple"
             }
         ],
         "root": null,
@@ -2553,6 +3438,15 @@
   "message" : "&lt;p&gt;IT-Hilfe&lt;/p&gt;\n&lt;p&gt;Dies ist eine Demo-Seite f&amp;uuml;r den IT-Support-Bereich dieser Anwendung.&lt;/p&gt;\n&lt;p&gt;Hinweis:&lt;br&gt;Aus Datenschutzgr&amp;uuml;nden werden auf dieser Demo-Seite keine echten Daten angezeigt.&lt;/p&gt;",
   "comment" : ""
 }, {
+  "message" : "Bestätigung Betriebssystem Wechsel",
+  "comment" : ""
+}, {
+  "message" : "Bitte Bestätigen Sie diesen Schritt",
+  "comment" : ""
+}, {
+  "message" : "Bitte bestätige, dass Sie keine Software benötigen die nur für Windows Geräte verfügbar ist",
+  "comment" : ""
+}, {
   "message" : "Diese App hilft dir dabei, das passende Gerät für deine Bedürfnisse zu finden.",
   "comment" : ""
 }, {
@@ -2562,16 +3456,43 @@
   "message" : "Hardware Bestätigung",
   "comment" : ""
 }, {
+  "message" : "Ja, Ich möchte zu Apple wechseln",
+  "comment" : ""
+}, {
+  "message" : "Ja, Ich möchte zu Windows wechseln",
+  "comment" : ""
+}, {
   "message" : "Ja, das bin ich!",
   "comment" : ""
 }, {
   "message" : "Ja, das ist mein aktuelles Gerät!",
   "comment" : ""
 }, {
+  "message" : "Nein, Ich möchte nicht zu Apple wechseln",
+  "comment" : ""
+}, {
+  "message" : "Nein, Ich möchte nicht zu Windows wechseln",
+  "comment" : ""
+}, {
   "message" : "Nein, das bin ich nicht!",
   "comment" : ""
 }, {
   "message" : "Nein, das ist nicht mein aktuelles Gerät!",
+  "comment" : ""
+}, {
+  "message" : "Sie sind dabei von einem Apple Gerät zu einem Apple Gerät zu wechseln",
+  "comment" : ""
+}, {
+  "message" : "Sie sind dabei von einem Apple Gerät zu einem Windows Gerät zu wechseln",
+  "comment" : ""
+}, {
+  "message" : "Software Bestätigung",
+  "comment" : ""
+}, {
+  "message" : "Weiter, Ich benötige diese Software nicht",
+  "comment" : ""
+}, {
+  "message" : "Zurück, Ich benötige diese Software",
   "comment" : ""
 } ]</required_translations>
         <root_component/>
@@ -2617,14 +3538,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-05-01 13:04:37</sys_created_on>
         <sys_id>f0d4c1b0c3512210e4d6b132b4013143</sys_id>
-        <sys_mod_count>74</sys_mod_count>
+        <sys_mod_count>81</sys_mod_count>
         <sys_name>Default</sys_name>
         <sys_package display_value="DeviceFinder" source="x_1639660_devicefi">b1a177cfc30d2e90e4d6b132b401315c</sys_package>
         <sys_policy/>
         <sys_scope display_value="DeviceFinder">b1a177cfc30d2e90e4d6b132b401315c</sys_scope>
         <sys_update_name>sys_ux_macroponent_f0d4c1b0c3512210e4d6b132b4013143</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-05-04 13:39:46</sys_updated_on>
+        <sys_updated_on>2025-05-12 08:51:07</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=f0d4c1b0c3512210e4d6b132b4013143"/>
 </record_update>
