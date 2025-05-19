@@ -1864,8 +1864,41 @@
                                                                                                         "value": "SoftwareCheck"
                                                                                                     },
                                                                                                     {
-                                                                                                        "type": "JSON_LITERAL",
-                                                                                                        "value": "tbd"
+                                                                                                        "transform": {
+                                                                                                            "operands": {
+                                                                                                                "container": [
+                                                                                                                    {
+                                                                                                                        "operation": {
+                                                                                                                            "left": {
+                                                                                                                                "binding": {
+                                                                                                                                    "address": [
+                                                                                                                                        "isAppleDevice"
+                                                                                                                                    ]
+                                                                                                                                },
+                                                                                                                                "type": "STATE_BINDING"
+                                                                                                                            },
+                                                                                                                            "operator": "EQUAL",
+                                                                                                                            "right": {
+                                                                                                                                "type": "JSON_LITERAL",
+                                                                                                                                "value": true
+                                                                                                                            }
+                                                                                                                        },
+                                                                                                                        "type": "BINARY"
+                                                                                                                    },
+                                                                                                                    {
+                                                                                                                        "type": "JSON_LITERAL",
+                                                                                                                        "value": "WechselAufWindows"
+                                                                                                                    },
+                                                                                                                    {
+                                                                                                                        "type": "JSON_LITERAL",
+                                                                                                                        "value": "Einsatzgebiet"
+                                                                                                                    }
+                                                                                                                ],
+                                                                                                                "type": "LIST_CONTAINER"
+                                                                                                            },
+                                                                                                            "operator": "IF"
+                                                                                                        },
+                                                                                                        "type": "CLIENT_TRANSFORM"
                                                                                                     }
                                                                                                 ],
                                                                                                 "type": "LIST_CONTAINER"
@@ -2408,12 +2441,83 @@
                                                 "type": "EVENT"
                                             }
                                         ]
+                                    },
+                                    {
+                                        "eventMappingId": "AQSjjqvccSAUccYjjmwDODUeehhggvao",
+                                        "isConfiguration": false,
+                                        "offRowStorageId": null,
+                                        "sourceEventApiName": "confirm_message.NOW_CONFIRMATION_MESSAGE#PRIMARY_CLICKED",
+                                        "sourceEventCorrelationId": null,
+                                        "sourceEventDefinition": {
+                                            "apiName": "confirm_message.NOW_CONFIRMATION_MESSAGE#PRIMARY_CLICKED",
+                                            "id": null,
+                                            "type": "UXEVENT"
+                                        },
+                                        "sourceEventSysId": null,
+                                        "targets": [
+                                            {
+                                                "broker": null,
+                                                "clientScript": null,
+                                                "conditional": null,
+                                                "declarativeAction": null,
+                                                "event": {
+                                                    "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                                                    "payload": {
+                                                        "container": {
+                                                            "propName": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": "currentPage"
+                                                            },
+                                                            "value": {
+                                                                "transform": {
+                                                                    "operands": {
+                                                                        "container": [
+                                                                            {
+                                                                                "operation": {
+                                                                                    "left": {
+                                                                                        "binding": {
+                                                                                            "address": [
+                                                                                                "isAppleDevice"
+                                                                                            ]
+                                                                                        },
+                                                                                        "type": "STATE_BINDING"
+                                                                                    },
+                                                                                    "operator": "EQUAL",
+                                                                                    "right": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": true
+                                                                                    }
+                                                                                },
+                                                                                "type": "BINARY"
+                                                                            },
+                                                                            {
+                                                                                "type": "JSON_LITERAL",
+                                                                                "value": "Einsatzgebiet"
+                                                                            },
+                                                                            {
+                                                                                "type": "JSON_LITERAL",
+                                                                                "value": "WechselAufWindows"
+                                                                            }
+                                                                        ],
+                                                                        "type": "LIST_CONTAINER"
+                                                                    },
+                                                                    "operator": "IF"
+                                                                },
+                                                                "type": "CLIENT_TRANSFORM"
+                                                            }
+                                                        },
+                                                        "type": "MAP_CONTAINER"
+                                                    },
+                                                    "sysId": "32408b42ff7a10109046e490703bf176"
+                                                },
+                                                "operation": null,
+                                                "targetId": "LPFbaavWXDUsSeeddIwPwOjXQueebb",
+                                                "type": "EVENT"
+                                            }
+                                        ]
                                     }
                                 ],
-                                "isHidden": {
-                                    "type": "JSON_LITERAL",
-                                    "value": null
-                                },
+                                "isHidden": null,
                                 "preset": null,
                                 "propertyValues": {
                                     "caption": {
@@ -2699,7 +2803,78 @@
                                 },
                                 "elementId": "confirmation_message_4",
                                 "elementLabel": "Confirmation message 4",
-                                "eventMappings": [],
+                                "eventMappings": [
+                                    {
+                                        "eventMappingId": "PjjjXYvfCBUveejjjIGtSoBeekyd",
+                                        "isConfiguration": false,
+                                        "offRowStorageId": null,
+                                        "sourceEventApiName": "confirm_message.NOW_CONFIRMATION_MESSAGE#PRIMARY_CLICKED",
+                                        "sourceEventCorrelationId": null,
+                                        "sourceEventDefinition": {
+                                            "apiName": "confirm_message.NOW_CONFIRMATION_MESSAGE#PRIMARY_CLICKED",
+                                            "id": null,
+                                            "type": "UXEVENT"
+                                        },
+                                        "sourceEventSysId": null,
+                                        "targets": [
+                                            {
+                                                "broker": null,
+                                                "clientScript": null,
+                                                "conditional": null,
+                                                "declarativeAction": null,
+                                                "event": {
+                                                    "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                                                    "payload": {
+                                                        "type": "JSON_LITERAL",
+                                                        "value": {
+                                                            "propName": "currentPage",
+                                                            "value": "Einsatzgebiet"
+                                                        }
+                                                    },
+                                                    "sysId": "32408b42ff7a10109046e490703bf176"
+                                                },
+                                                "operation": null,
+                                                "targetId": "eehhfqaLPJaaCkcnjjeecEOsJGEggTQ",
+                                                "type": "EVENT"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "eventMappingId": "bbfwWhhvhZCaaNcjjhgPccEAxBKWp",
+                                        "isConfiguration": false,
+                                        "offRowStorageId": null,
+                                        "sourceEventApiName": "confirm_message.NOW_CONFIRMATION_MESSAGE#SECONDARY_CLICKED",
+                                        "sourceEventCorrelationId": null,
+                                        "sourceEventDefinition": {
+                                            "apiName": "confirm_message.NOW_CONFIRMATION_MESSAGE#SECONDARY_CLICKED",
+                                            "id": null,
+                                            "type": "UXEVENT"
+                                        },
+                                        "sourceEventSysId": null,
+                                        "targets": [
+                                            {
+                                                "broker": null,
+                                                "clientScript": null,
+                                                "conditional": null,
+                                                "declarativeAction": null,
+                                                "event": {
+                                                    "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                                                    "payload": {
+                                                        "type": "JSON_LITERAL",
+                                                        "value": {
+                                                            "propName": "currentPage",
+                                                            "value": "BetriebssystemAuswahl"
+                                                        }
+                                                    },
+                                                    "sysId": "32408b42ff7a10109046e490703bf176"
+                                                },
+                                                "operation": null,
+                                                "targetId": "kDHiDeehhQxDaahcjjQcGYWINfrVW",
+                                                "type": "EVENT"
+                                            }
+                                        ]
+                                    }
+                                ],
                                 "isHidden": {
                                     "type": "JSON_LITERAL",
                                     "value": null
@@ -3005,7 +3180,7 @@
                                         "value": {
                                             "code": null,
                                             "comment": "",
-                                            "message": "Sie sind dabei von einem Apple Gerät zu einem Apple Gerät zu wechseln"
+                                            "message": "Sie sind dabei von einem Windows Gerät zu einem Apple Gerät zu wechseln"
                                         }
                                     },
                                     "header": {
@@ -3228,8 +3403,41 @@
         "elementLabel": "Einsatzgebiet",
         "eventMappings": [],
         "isHidden": {
-            "type": "JSON_LITERAL",
-            "value": null
+            "transform": {
+                "operands": {
+                    "container": [
+                        {
+                            "operation": {
+                                "left": {
+                                    "binding": {
+                                        "address": [
+                                            "currentPage"
+                                        ]
+                                    },
+                                    "type": "STATE_BINDING"
+                                },
+                                "operator": "EQUAL",
+                                "right": {
+                                    "type": "JSON_LITERAL",
+                                    "value": "Einsatzgebiet"
+                                }
+                            },
+                            "type": "BINARY"
+                        },
+                        {
+                            "type": "JSON_LITERAL",
+                            "value": false
+                        },
+                        {
+                            "type": "JSON_LITERAL",
+                            "value": true
+                        }
+                    ],
+                    "type": "LIST_CONTAINER"
+                },
+                "operator": "IF"
+            },
+            "type": "CLIENT_TRANSFORM"
         },
         "overrides": {
             "composition": [
@@ -4282,8 +4490,41 @@
         "elementLabel": "Bildschirm",
         "eventMappings": [],
         "isHidden": {
-            "type": "JSON_LITERAL",
-            "value": null
+            "transform": {
+                "operands": {
+                    "container": [
+                        {
+                            "operation": {
+                                "left": {
+                                    "binding": {
+                                        "address": [
+                                            "currentPage"
+                                        ]
+                                    },
+                                    "type": "STATE_BINDING"
+                                },
+                                "operator": "EQUAL",
+                                "right": {
+                                    "type": "JSON_LITERAL",
+                                    "value": "Bildschirm"
+                                }
+                            },
+                            "type": "BINARY"
+                        },
+                        {
+                            "type": "JSON_LITERAL",
+                            "value": false
+                        },
+                        {
+                            "type": "JSON_LITERAL",
+                            "value": true
+                        }
+                    ],
+                    "type": "LIST_CONTAINER"
+                },
+                "operator": "IF"
+            },
+            "type": "CLIENT_TRANSFORM"
         },
         "overrides": {
             "composition": [
@@ -5368,10 +5609,10 @@
   "message" : "Nein, das ist nicht mein aktuelles Gerät!",
   "comment" : ""
 }, {
-  "message" : "Sie sind dabei von einem Apple Gerät zu einem Apple Gerät zu wechseln",
+  "message" : "Sie sind dabei von einem Apple Gerät zu einem Windows Gerät zu wechseln",
   "comment" : ""
 }, {
-  "message" : "Sie sind dabei von einem Apple Gerät zu einem Windows Gerät zu wechseln",
+  "message" : "Sie sind dabei von einem Windows Gerät zu einem Apple Gerät zu wechseln",
   "comment" : ""
 }, {
   "message" : "Software Bestätigung",
@@ -5444,14 +5685,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-05-01 13:04:37</sys_created_on>
         <sys_id>f0d4c1b0c3512210e4d6b132b4013143</sys_id>
-        <sys_mod_count>98</sys_mod_count>
+        <sys_mod_count>107</sys_mod_count>
         <sys_name>Default</sys_name>
         <sys_package display_value="DeviceFinder" source="x_1639660_devicefi">b1a177cfc30d2e90e4d6b132b401315c</sys_package>
         <sys_policy/>
         <sys_scope display_value="DeviceFinder">b1a177cfc30d2e90e4d6b132b401315c</sys_scope>
         <sys_update_name>sys_ux_macroponent_f0d4c1b0c3512210e4d6b132b4013143</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-05-19 08:12:09</sys_updated_on>
+        <sys_updated_on>2025-05-19 08:32:23</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=f0d4c1b0c3512210e4d6b132b4013143"/>
 </record_update>
