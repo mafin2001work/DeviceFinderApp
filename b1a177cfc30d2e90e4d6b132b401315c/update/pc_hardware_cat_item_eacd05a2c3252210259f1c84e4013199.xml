@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="pc_hardware_cat_item">
+    <pc_hardware_cat_item action="INSERT_OR_UPDATE">
+        <access_type>restricted</access_type>
+        <active>true</active>
+        <auto_created>true</auto_created>
+        <availability>on_desktop</availability>
+        <billable>false</billable>
+        <category display_value="Laptops">59f586f23731300054b6a3549dbe5db7</category>
+        <checked_out/>
+        <cost>3197.25</cost>
+        <custom_cart/>
+        <delivery_plan display_value="DEFAULT">523da512c611228900811a37c97c2014</delivery_plan>
+        <delivery_plan_script/>
+        <delivery_time>1970-01-03 00:00:00</delivery_time>
+        <description/>
+        <display_price_property>non_zero</display_price_property>
+        <entitlement_script/>
+        <features/>
+        <flow_designer_flow/>
+        <fulfillment_automation_level>unspecified</fulfillment_automation_level>
+        <group/>
+        <hide_sp>false</hide_sp>
+        <icon/>
+        <ignore_price>false</ignore_price>
+        <image/>
+        <location/>
+        <make_item_non_conversational>false</make_item_non_conversational>
+        <mandatory_attachment>false</mandatory_attachment>
+        <meta/>
+        <mobile_hide_price>false</mobile_hide_price>
+        <mobile_picture/>
+        <mobile_picture_type>use_desktop_picture</mobile_picture_type>
+        <model display_value="Dell Inc. Standard Windows Laptop">3e4805eac3e12210259f1c84e4013143</model>
+        <name>Standard Windows Laptop</name>
+        <no_attachment_v2>false</no_attachment_v2>
+        <no_cart>false</no_cart>
+        <no_cart_v2>false</no_cart_v2>
+        <no_delivery_time_v2>false</no_delivery_time_v2>
+        <no_order>false</no_order>
+        <no_order_now>false</no_order_now>
+        <no_proceed_checkout>false</no_proceed_checkout>
+        <no_quantity>false</no_quantity>
+        <no_quantity_v2>false</no_quantity_v2>
+        <no_save_as_draft>false</no_save_as_draft>
+        <no_search>false</no_search>
+        <no_wishlist_v2>false</no_wishlist_v2>
+        <omit_price>false</omit_price>
+        <order>0</order>
+        <ordered_item_link/>
+        <owner display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</owner>
+        <picture/>
+        <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=eacd05a2c3252210259f1c84e4013199&amp;sysparm_preview=true", "summary");</preview>
+        <price>3579</price>
+        <product_id/>
+        <published_ref/>
+        <recurring_frequency/>
+        <request_method/>
+        <roles/>
+        <sc_catalogs>e0d08b13c3330100c8b837659bba8fb4</sc_catalogs>
+        <sc_ic_item_staging/>
+        <sc_ic_version/>
+        <sc_template/>
+        <short_description/>
+        <show_variable_help_on_load>false</show_variable_help_on_load>
+        <specs/>
+        <start_closed>false</start_closed>
+        <state/>
+        <sys_class_name>pc_hardware_cat_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-19 10:28:51</sys_created_on>
+        <sys_id>eacd05a2c3252210259f1c84e4013199</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Standard Windows Laptop</sys_name>
+        <sys_package display_value="DeviceFinder" source="x_1639660_devicefi">b1a177cfc30d2e90e4d6b132b401315c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DeviceFinder">b1a177cfc30d2e90e4d6b132b401315c</sys_scope>
+        <sys_update_name>pc_hardware_cat_item_eacd05a2c3252210259f1c84e4013199</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-19 10:28:51</sys_updated_on>
+        <taxonomy_topic/>
+        <template/>
+        <template_manager_roles/>
+        <type>item</type>
+        <upc/>
+        <use_sc_layout>true</use_sc_layout>
+        <vendor display_value="Dell Inc.">b7e7d7d8c0a8016900a5d7f291acce5c</vendor>
+        <vendor_catalog_item/>
+        <version/>
+        <visible_bundle>true</visible_bundle>
+        <visible_guide>true</visible_guide>
+        <visible_standalone>true</visible_standalone>
+        <workflow/>
+    </pc_hardware_cat_item>
+    <sys_translated_text action="delete_multiple" query="documentkey=eacd05a2c3252210259f1c84e4013199"/>
+    <fx_price action="delete_multiple" query="id=eacd05a2c3252210259f1c84e4013199"/>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>3197.2485</amount>
+        <currency display_value="EUR">EUR</currency>
+        <field>price</field>
+        <id>eacd05a2c3252210259f1c84e4013199</id>
+        <parent/>
+        <reference_amount>3579</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-19 10:28:51</sys_created_on>
+        <sys_id>eecd05a2c3252210259f1c84e401319a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-19 10:28:51</sys_updated_on>
+        <table>pc_hardware_cat_item</table>
+        <type>calculated</type>
+    </fx_price>
+</record_update>
