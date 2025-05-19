@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="db_image">
+    <db_image action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category/>
+        <format/>
+        <height/>
+        <image>36056c6ec3212210259f1c84e4013102</image>
+        <name>upload_Apple_logo_black.svg</name>
+        <size_bytes/>
+        <sys_class_name>db_image</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-19 07:30:47</sys_created_on>
+        <sys_id>4205282ec3212210259f1c84e4013194</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>upload_Apple_logo_black.svg</sys_name>
+        <sys_package display_value="DeviceFinder" source="x_1639660_devicefi">b1a177cfc30d2e90e4d6b132b401315c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DeviceFinder">b1a177cfc30d2e90e4d6b132b401315c</sys_scope>
+        <sys_update_name>db_image_4205282ec3212210259f1c84e4013194</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-19 07:30:50</sys_updated_on>
+        <thumbnail/>
+        <width/>
+    </db_image>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color/>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/svg+xml</content_type>
+        <file_name>Apple_logo_black.svg</file_name>
+        <hash>9d00ea77a3240f291356c36261c5f45d7fa456f29c97a2f060caf0ed4b9c3231</hash>
+        <image_height/>
+        <image_width/>
+        <size_bytes>660</size_bytes>
+        <size_compressed>405</size_compressed>
+        <state>available</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-19 07:30:50</sys_created_on>
+        <sys_id>36056c6ec3212210259f1c84e4013102</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-05-19 07:30:50</sys_updated_on>
+        <table_name>db_image</table_name>
+        <table_sys_id>4205282ec3212210259f1c84e4013194</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAA/w==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="Apple_logo_black.svg" sys_id="36056c6ec3212210259f1c84e4013102">36056c6ec3212210259f1c84e4013102</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-19 07:30:50</sys_created_on>
+        <sys_id>76056c6ec3212210259f1c84e4013102</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>NVLLbuMwDLz3KwjdRYuinkGcS8/7EUVqxAW2bRAbddGv79DevdhjkRrODH1evm70/f73YxndvK730zBs28ab8ufjNsQQwoAOZy2n5f5ynUZ3f0zL9PiaHG1vr+s8uibJ0Ty93eZ1dIIr7vJEdL6/rDO9ju5PbY2FNAXuV5+5UeLsJTSOVCLHf1B64EyBJDVOJBpYCfO5AyfUY7BeLqR4xcCVqnD3pQFJMpgiuItw8a2CSqKyeMn5P158A/babXxJO7j6WmwsRCiIoLGhljHV4ILjDL5cDx4vsT6nYrO7KQhUiuKZMb9dQdKTaY+Fk4/dRMRsjAcuBTHAYBTYSWqd8F8PaGKsGASiUyGBLjUQ21FQiyLCv/SGaHrn+PPuoyYvTWBE7aIWNGXzvWe+IwE1RPoKDC+SwGtxIUPxkAdGfIlAKClCQAdaqWYTbsM1wg7sCzW1MAyJ5l1WxSUBveSDh2TfNZvQfY9W072mlDJOzGO0NYR9zZYqFqk/brg8ne1nu/wCV8/OmZQCAAA=</data>
+        <length>528</length>
+        <position>1</position>
+        <sys_attachment display_value="Apple_logo_black.svg" sys_id="36056c6ec3212210259f1c84e4013102">36056c6ec3212210259f1c84e4013102</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-19 07:30:50</sys_created_on>
+        <sys_id>f6056c6ec3212210259f1c84e4013102</sys_id>
+    </sys_attachment_doc>
+</record_update>
