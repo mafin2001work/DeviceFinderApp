@@ -5980,7 +5980,43 @@
                                                         },
                                                         "elementId": "button_5",
                                                         "elementLabel": "Button 5",
-                                                        "eventMappings": [],
+                                                        "eventMappings": [
+                                                            {
+                                                                "eventMappingId": "QsCvjjfZggBEfteeddOaaGNbbPquIcn",
+                                                                "isConfiguration": false,
+                                                                "offRowStorageId": null,
+                                                                "sourceEventApiName": "sn_button.NOW_BUTTON#CLICKED",
+                                                                "sourceEventCorrelationId": null,
+                                                                "sourceEventDefinition": {
+                                                                    "apiName": "sn_button.NOW_BUTTON#CLICKED",
+                                                                    "id": null,
+                                                                    "type": "UXEVENT"
+                                                                },
+                                                                "sourceEventSysId": null,
+                                                                "targets": [
+                                                                    {
+                                                                        "broker": null,
+                                                                        "clientScript": null,
+                                                                        "conditional": null,
+                                                                        "declarativeAction": null,
+                                                                        "event": {
+                                                                            "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                                                                            "payload": {
+                                                                                "type": "JSON_LITERAL",
+                                                                                "value": {
+                                                                                    "propName": "currentPage",
+                                                                                    "value": "GeraeteAuswahl"
+                                                                                }
+                                                                            },
+                                                                            "sysId": "32408b42ff7a10109046e490703bf176"
+                                                                        },
+                                                                        "operation": null,
+                                                                        "targetId": "TnledgDAAUzujjuUHtkOsjjbDR",
+                                                                        "type": "EVENT"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ],
                                                         "isHidden": {
                                                             "type": "JSON_LITERAL",
                                                             "value": null
@@ -6418,8 +6454,41 @@
         "elementLabel": "GeraeteAuswahl",
         "eventMappings": [],
         "isHidden": {
-            "type": "JSON_LITERAL",
-            "value": null
+            "transform": {
+                "operands": {
+                    "container": [
+                        {
+                            "operation": {
+                                "left": {
+                                    "binding": {
+                                        "address": [
+                                            "currentPage"
+                                        ]
+                                    },
+                                    "type": "STATE_BINDING"
+                                },
+                                "operator": "EQUAL",
+                                "right": {
+                                    "type": "JSON_LITERAL",
+                                    "value": "GeraeteAuswahl"
+                                }
+                            },
+                            "type": "BINARY"
+                        },
+                        {
+                            "type": "JSON_LITERAL",
+                            "value": false
+                        },
+                        {
+                            "type": "JSON_LITERAL",
+                            "value": true
+                        }
+                    ],
+                    "type": "LIST_CONTAINER"
+                },
+                "operator": "IF"
+            },
+            "type": "CLIENT_TRANSFORM"
         },
         "overrides": {
             "composition": [
@@ -6436,11 +6505,115 @@
                         "value": null
                     },
                     "overrides": {
-                        "composition": [],
+                        "composition": [
+                            {
+                                "definition": {
+                                    "id": "dec0b89ec87f44e66126f8cc78e53891",
+                                    "type": "MACROPONENT"
+                                },
+                                "elementId": "data_set_1",
+                                "elementLabel": "Data set 1",
+                                "eventMappings": [],
+                                "isHidden": {
+                                    "type": "JSON_LITERAL",
+                                    "value": null
+                                },
+                                "preset": null,
+                                "propertyValues": {
+                                    "cardHeight": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "sm"
+                                    },
+                                    "daClientActionContract": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "data": {
+                                        "binding": {
+                                            "address": [
+                                                "evam_data_resource_1",
+                                                "compositeDataViews"
+                                            ]
+                                        },
+                                        "type": "DATA_OUTPUT_BINDING"
+                                    },
+                                    "dataBrokerIsLoading": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "defaultView": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "grid"
+                                    },
+                                    "emptyMessage": {
+                                        "type": "TRANSLATION_LITERAL",
+                                        "value": {
+                                            "code": null,
+                                            "comment": "",
+                                            "message": "No content to display"
+                                        }
+                                    },
+                                    "emptyStateHeadingLevel": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "2"
+                                    },
+                                    "hideFilter": {
+                                        "type": "JSON_LITERAL",
+                                        "value": true
+                                    },
+                                    "hidePaginationControls": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "maxCardsPerRow": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "4"
+                                    },
+                                    "minCardWidth": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "150"
+                                    },
+                                    "title": {
+                                        "type": "TRANSLATION_LITERAL",
+                                        "value": {
+                                            "code": null,
+                                            "comment": "",
+                                            "message": "Vorgeschlagene Geräte"
+                                        }
+                                    },
+                                    "titleHeadingLevel": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "1"
+                                    },
+                                    "titleStyleVariant": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "header-tertiary"
+                                    },
+                                    "toggleView": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    }
+                                },
+                                "slot": null,
+                                "styles": {
+                                    "default": {
+                                        "margin-left": "0",
+                                        "margin-right": "0",
+                                        "padding-left": "var(--now-scalable-space--3xl)",
+                                        "padding-right": "var(--now-scalable-space--3xl)",
+                                        "padding-top": "var(--now-scalable-space--3xl)"
+                                    }
+                                }
+                            }
+                        ],
                         "layout": {
                             "default": {
                                 "children": null,
-                                "items": [],
+                                "items": [
+                                    {
+                                        "element_id": "data_set_1"
+                                    }
+                                ],
                                 "root": null,
                                 "styles": {
                                     "align-items": "stretch",
@@ -6721,6 +6894,38 @@
             }
         },
         "readEvaluationMode": "EAGER"
+    },
+    {
+        "definition": {
+            "id": "e6af35d9dbb810106b3982c9689619e5",
+            "type": "COMPOSITE"
+        },
+        "elementId": "evam_data_resource_1",
+        "elementLabel": "EVAM Data Resource 1",
+        "eventMappings": [],
+        "inputValues": {
+            "evamDefinitionId": {
+                "type": "JSON_LITERAL",
+                "value": "86ab2636c3ed6210259f1c84e4013157"
+            },
+            "filterPreference": {
+                "type": "JSON_LITERAL",
+                "value": ""
+            },
+            "pageCursor": {
+                "type": "JSON_LITERAL",
+                "value": ""
+            },
+            "pageNumber": {
+                "type": "JSON_LITERAL",
+                "value": "0"
+            },
+            "pageSize": {
+                "type": "JSON_LITERAL",
+                "value": "20"
+            }
+        },
+        "readEvaluationMode": "EAGER"
     }
 ]</data>
         <description/>
@@ -6872,6 +7077,9 @@
   "message" : "Nein, das ist nicht mein aktuelles Gerät!",
   "comment" : ""
 }, {
+  "message" : "No content to display",
+  "comment" : ""
+}, {
   "message" : "Sie sind dabei von einem Apple Gerät zu einem Windows Gerät zu wechseln",
   "comment" : ""
 }, {
@@ -6879,6 +7087,9 @@
   "comment" : ""
 }, {
   "message" : "Software Bestätigung",
+  "comment" : ""
+}, {
+  "message" : "Vorgeschlagene Geräte",
   "comment" : ""
 }, {
   "message" : "Weiter, Ich benötige diese Software nicht",
@@ -6951,14 +7162,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-05-01 13:04:37</sys_created_on>
         <sys_id>f0d4c1b0c3512210e4d6b132b4013143</sys_id>
-        <sys_mod_count>134</sys_mod_count>
+        <sys_mod_count>138</sys_mod_count>
         <sys_name>Default</sys_name>
         <sys_package display_value="DeviceFinder" source="x_1639660_devicefi">b1a177cfc30d2e90e4d6b132b401315c</sys_package>
         <sys_policy/>
         <sys_scope display_value="DeviceFinder">b1a177cfc30d2e90e4d6b132b401315c</sys_scope>
         <sys_update_name>sys_ux_macroponent_f0d4c1b0c3512210e4d6b132b4013143</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-05-22 07:50:24</sys_updated_on>
+        <sys_updated_on>2025-05-22 11:18:50</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=f0d4c1b0c3512210e4d6b132b4013143"/>
 </record_update>
