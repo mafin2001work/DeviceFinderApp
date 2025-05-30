@@ -1147,6 +1147,26 @@
                                                                         "operation": null,
                                                                         "targetId": "ncUIhPaahBEjjXeeddOkFPIjjAffggJo",
                                                                         "type": "EVENT"
+                                                                    },
+                                                                    {
+                                                                        "broker": null,
+                                                                        "clientScript": null,
+                                                                        "conditional": null,
+                                                                        "declarativeAction": null,
+                                                                        "event": {
+                                                                            "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                                                                            "payload": {
+                                                                                "type": "JSON_LITERAL",
+                                                                                "value": {
+                                                                                    "propName": "DynamicFilterOperatingSystem",
+                                                                                    "value": "manufacturer=b7e9e843c0a80169009a5a485bb2a2b5"
+                                                                                }
+                                                                            },
+                                                                            "sysId": "32408b42ff7a10109046e490703bf176"
+                                                                        },
+                                                                        "operation": null,
+                                                                        "targetId": "zowaaggfTVCUiiDjjfiiPXuCsqPKee",
+                                                                        "type": "EVENT"
                                                                     }
                                                                 ]
                                                             }
@@ -1437,6 +1457,26 @@
                                                                         },
                                                                         "operation": null,
                                                                         "targetId": "ffmccyqPhhPAkxNeeddDUIeehhggwsfeeddeedd",
+                                                                        "type": "EVENT"
+                                                                    },
+                                                                    {
+                                                                        "broker": null,
+                                                                        "clientScript": null,
+                                                                        "conditional": null,
+                                                                        "declarativeAction": null,
+                                                                        "event": {
+                                                                            "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                                                                            "payload": {
+                                                                                "type": "JSON_LITERAL",
+                                                                                "value": {
+                                                                                    "propName": "DynamicFilterOperatingSystem",
+                                                                                    "value": "manufacturer=b7e7d7d8c0a8016900a5d7f291acce5c"
+                                                                                }
+                                                                            },
+                                                                            "sysId": "32408b42ff7a10109046e490703bf176"
+                                                                        },
+                                                                        "operation": null,
+                                                                        "targetId": "ddgvuueehhmiDkWnjjiiAFkrpNrcsX",
                                                                         "type": "EVENT"
                                                                     }
                                                                 ]
@@ -3507,7 +3547,7 @@
                                         "value": {
                                             "code": null,
                                             "comment": "",
-                                            "message": "&lt;p&gt;&lt;span style=\"font-family: 'arial black', 'avant garde'; font-size: 18pt;\"&gt;F&amp;uuml;r welchen Bereich wird das Ger&amp;auml;t verwendet ?&lt;/span&gt;&lt;/p&gt;"
+                                            "message": "&lt;p&gt;&lt;span style=\"font-family: 'arial black', 'avant garde'; font-size: 18pt;\"&gt;F&amp;uuml;r welchen Bereich soll das neue Ger&amp;auml;t verwendet werden?&lt;/span&gt;&lt;/p&gt;"
                                         }
                                     }
                                 },
@@ -3585,6 +3625,26 @@
                                                                         },
                                                                         "operation": null,
                                                                         "targetId": "MOeeQMfbggCETvjjcMPIvgTViBn",
+                                                                        "type": "EVENT"
+                                                                    },
+                                                                    {
+                                                                        "broker": null,
+                                                                        "clientScript": null,
+                                                                        "conditional": null,
+                                                                        "declarativeAction": null,
+                                                                        "event": {
+                                                                            "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                                                                            "payload": {
+                                                                                "type": "JSON_LITERAL",
+                                                                                "value": {
+                                                                                    "propName": "DynamicFilterAreaOfApplication",
+                                                                                    "value": "sys_tags.78aacd6ec3e12210259f1c84e401316a=78aacd6ec3e12210259f1c84e401316a"
+                                                                                }
+                                                                            },
+                                                                            "sysId": "32408b42ff7a10109046e490703bf176"
+                                                                        },
+                                                                        "operation": null,
+                                                                        "targetId": "PccgyNvoJAEggZjjbboPgTwvXccRjj",
                                                                         "type": "EVENT"
                                                                     }
                                                                 ]
@@ -3900,6 +3960,26 @@
                                                                         "operation": null,
                                                                         "targetId": "CidpDfxXCkeeLeeddJaaGTbbRxxsiB",
                                                                         "type": "EVENT"
+                                                                    },
+                                                                    {
+                                                                        "broker": null,
+                                                                        "clientScript": null,
+                                                                        "conditional": null,
+                                                                        "declarativeAction": null,
+                                                                        "event": {
+                                                                            "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                                                                            "payload": {
+                                                                                "type": "JSON_LITERAL",
+                                                                                "value": {
+                                                                                    "propName": "DynamicFilterAreaOfApplication",
+                                                                                    "value": "sys_tags.fed5da12471331007f47563dbb9a7184=fed5da12471331007f47563dbb9a7184"
+                                                                                }
+                                                                            },
+                                                                            "sysId": "32408b42ff7a10109046e490703bf176"
+                                                                        },
+                                                                        "operation": null,
+                                                                        "targetId": "ffjjbbnqeehhwUBUIxeeddGsBYtKubbmct",
+                                                                        "type": "EVENT"
                                                                     }
                                                                 ]
                                                             }
@@ -4213,6 +4293,26 @@
                                                                         },
                                                                         "operation": null,
                                                                         "targetId": "flTeeddgvpjBkVffjjlQMTaayGQddLt",
+                                                                        "type": "EVENT"
+                                                                    },
+                                                                    {
+                                                                        "broker": null,
+                                                                        "clientScript": null,
+                                                                        "conditional": null,
+                                                                        "declarativeAction": null,
+                                                                        "event": {
+                                                                            "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                                                                            "payload": {
+                                                                                "type": "JSON_LITERAL",
+                                                                                "value": {
+                                                                                    "propName": "DynamicFilterAreaOfApplication",
+                                                                                    "value": "sys_tags.56119566c3252210259f1c84e40131de=56119566c3252210259f1c84e40131de"
+                                                                                }
+                                                                            },
+                                                                            "sysId": "32408b42ff7a10109046e490703bf176"
+                                                                        },
+                                                                        "operation": null,
+                                                                        "targetId": "NFNPxABdAErNjjZaaHWUeeddiiRUNP",
                                                                         "type": "EVENT"
                                                                     }
                                                                 ]
@@ -5420,6 +5520,26 @@
                                                                         "operation": null,
                                                                         "targetId": "iiwpzRfiiZAaaaaoeeddMaaPeehhkeehhVMhQq",
                                                                         "type": "EVENT"
+                                                                    },
+                                                                    {
+                                                                        "broker": null,
+                                                                        "clientScript": null,
+                                                                        "conditional": null,
+                                                                        "declarativeAction": null,
+                                                                        "event": {
+                                                                            "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                                                                            "payload": {
+                                                                                "type": "JSON_LITERAL",
+                                                                                "value": {
+                                                                                    "propName": "DynamicFilterScreenSize",
+                                                                                    "value": "sys_tags.b5aa496ec3e12210259f1c84e4013113=b5aa496ec3e12210259f1c84e4013113"
+                                                                                }
+                                                                            },
+                                                                            "sysId": "32408b42ff7a10109046e490703bf176"
+                                                                        },
+                                                                        "operation": null,
+                                                                        "targetId": "NKIDZPISBEKrjjbIDeeddaaCaagXr",
+                                                                        "type": "EVENT"
                                                                     }
                                                                 ]
                                                             }
@@ -5704,6 +5824,26 @@
                                                                         },
                                                                         "operation": null,
                                                                         "targetId": "CcccceeyeehhgYAUMqeeddAgBfacCtvgggg",
+                                                                        "type": "EVENT"
+                                                                    },
+                                                                    {
+                                                                        "broker": null,
+                                                                        "clientScript": null,
+                                                                        "conditional": null,
+                                                                        "declarativeAction": null,
+                                                                        "event": {
+                                                                            "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                                                                            "payload": {
+                                                                                "type": "JSON_LITERAL",
+                                                                                "value": {
+                                                                                    "propName": "DynamicFilterScreenSize",
+                                                                                    "value": "sys_tags.afd09566c3252210259f1c84e4013184=afd09566c3252210259f1c84e4013184"
+                                                                                }
+                                                                            },
+                                                                            "sysId": "32408b42ff7a10109046e490703bf176"
+                                                                        },
+                                                                        "operation": null,
+                                                                        "targetId": "pcSLeevNwDUYReeddDQLBCcciiccRnv",
                                                                         "type": "EVENT"
                                                                     }
                                                                 ]
@@ -6280,6 +6420,60 @@
                                                                         "operation": null,
                                                                         "targetId": "TnledgDAAUzujjuUHtkOsjjbDR",
                                                                         "type": "EVENT"
+                                                                    },
+                                                                    {
+                                                                        "broker": null,
+                                                                        "clientScript": null,
+                                                                        "conditional": null,
+                                                                        "declarativeAction": null,
+                                                                        "event": null,
+                                                                        "operation": {
+                                                                            "dataBrokerId": "42e53d4ac3396250259f1c84e4013151",
+                                                                            "operationName": "REFRESH",
+                                                                            "parentResourceId": "evam_dynamic_filter_1",
+                                                                            "payload": {
+                                                                                "type": "JSON_LITERAL",
+                                                                                "value": {}
+                                                                            }
+                                                                        },
+                                                                        "targetId": "aaseehhjZPpggDUBCeeddGAHpNaaokeeMa",
+                                                                        "type": "DATABROKER_OP"
+                                                                    },
+                                                                    {
+                                                                        "broker": null,
+                                                                        "clientScript": null,
+                                                                        "conditional": null,
+                                                                        "declarativeAction": null,
+                                                                        "event": null,
+                                                                        "operation": {
+                                                                            "dataBrokerId": "eaafa603773300108d070d74c81061b6",
+                                                                            "operationName": "REFRESH",
+                                                                            "parentResourceId": "fetch_evam_data_1",
+                                                                            "payload": {
+                                                                                "type": "JSON_LITERAL",
+                                                                                "value": {}
+                                                                            }
+                                                                        },
+                                                                        "targetId": "UbbztdgCvBEaaTjjYEFjXbbjjtcSV",
+                                                                        "type": "DATABROKER_OP"
+                                                                    },
+                                                                    {
+                                                                        "broker": null,
+                                                                        "clientScript": null,
+                                                                        "conditional": null,
+                                                                        "declarativeAction": null,
+                                                                        "event": null,
+                                                                        "operation": {
+                                                                            "dataBrokerId": "7b652701773300108d070d74c81061b8",
+                                                                            "operationName": "REFRESH",
+                                                                            "parentResourceId": "bind_data_to_component_prop_1",
+                                                                            "payload": {
+                                                                                "type": "JSON_LITERAL",
+                                                                                "value": {}
+                                                                            }
+                                                                        },
+                                                                        "targetId": "hhOCbbaafshBaaEJeeddKQExPeqEaPv",
+                                                                        "type": "DATABROKER_OP"
                                                                     }
                                                                 ]
                                                             }
@@ -6798,8 +6992,8 @@
                                     "data": {
                                         "binding": {
                                             "address": [
-                                                "evam_data_resource_1",
-                                                "compositeDataViews"
+                                                "bind_data_to_component_prop_1",
+                                                "output"
                                             ]
                                         },
                                         "type": "DATA_OUTPUT_BINDING"
@@ -6817,7 +7011,7 @@
                                         "value": {
                                             "code": null,
                                             "comment": "",
-                                            "message": "No content to display"
+                                            "message": "Leider Wurde Kein Gerät mit deinen Anforderungen Gefunden"
                                         }
                                     },
                                     "emptyStateHeadingLevel": {
@@ -7590,16 +7784,116 @@
     },
     {
         "definition": {
-            "id": "e6af35d9dbb810106b3982c9689619e5",
-            "type": "COMPOSITE"
+            "id": "83b97b30773300108d070d74c81061f7",
+            "type": "GRAPHQL"
         },
-        "elementId": "evam_data_resource_1",
-        "elementLabel": "EVAM Data Resource 1",
+        "elementId": "fetch_evam_metadata_1",
+        "elementLabel": "Fetch EVAM Metadata 1",
         "eventMappings": [],
         "inputValues": {
             "evamDefinitionId": {
                 "type": "JSON_LITERAL",
                 "value": "86ab2636c3ed6210259f1c84e4013157"
+            }
+        },
+        "readEvaluationMode": "EAGER"
+    },
+    {
+        "definition": {
+            "id": "42e53d4ac3396250259f1c84e4013151",
+            "type": "TRANSFORM"
+        },
+        "elementId": "evam_dynamic_filter_1",
+        "elementLabel": "Evam Dynamic Filter 1",
+        "eventMappings": [],
+        "inputValues": {
+            "evam_metadata": {
+                "binding": {
+                    "address": [
+                        "fetch_evam_metadata_1",
+                        "output",
+                        "data"
+                    ]
+                },
+                "type": "DATA_OUTPUT_BINDING"
+            },
+            "query": {
+                "transform": {
+                    "operands": {
+                        "container": [
+                            {
+                                "binding": {
+                                    "address": [
+                                        "DynamicFilterModel"
+                                    ]
+                                },
+                                "type": "STATE_BINDING"
+                            },
+                            {
+                                "type": "JSON_LITERAL",
+                                "value": "^"
+                            },
+                            {
+                                "binding": {
+                                    "address": [
+                                        "DynamicFilterOperatingSystem"
+                                    ]
+                                },
+                                "type": "STATE_BINDING"
+                            },
+                            {
+                                "type": "JSON_LITERAL",
+                                "value": "^"
+                            },
+                            {
+                                "binding": {
+                                    "address": [
+                                        "DynamicFilterAreaOfApplication"
+                                    ]
+                                },
+                                "type": "STATE_BINDING"
+                            },
+                            {
+                                "type": "JSON_LITERAL",
+                                "value": "^"
+                            },
+                            {
+                                "binding": {
+                                    "address": [
+                                        "DynamicFilterScreenSize"
+                                    ]
+                                },
+                                "type": "STATE_BINDING"
+                            }
+                        ],
+                        "type": "LIST_CONTAINER"
+                    },
+                    "operator": "CONCAT"
+                },
+                "type": "CLIENT_TRANSFORM"
+            }
+        },
+        "readEvaluationMode": "EAGER"
+    },
+    {
+        "definition": {
+            "id": "eaafa603773300108d070d74c81061b6",
+            "type": "GRAPHQL"
+        },
+        "elementId": "fetch_evam_data_1",
+        "elementLabel": "Fetch EVAM Data 1",
+        "eventMappings": [],
+        "inputValues": {
+            "evamMetadata": {
+                "binding": {
+                    "address": [
+                        "evam_dynamic_filter_1",
+                        "output",
+                        "GlideCompositeDataMetadata_Query",
+                        "getMetadata"
+                    ]
+                },
+                "type": "DATA_OUTPUT_BINDING"
             },
             "filterPreference": {
                 "type": "JSON_LITERAL",
@@ -7611,11 +7905,32 @@
             },
             "pageNumber": {
                 "type": "JSON_LITERAL",
-                "value": "0"
+                "value": 0
             },
             "pageSize": {
                 "type": "JSON_LITERAL",
-                "value": "20"
+                "value": 20
+            }
+        },
+        "readEvaluationMode": "EAGER"
+    },
+    {
+        "definition": {
+            "id": "7b652701773300108d070d74c81061b8",
+            "type": "TRANSFORM"
+        },
+        "elementId": "bind_data_to_component_prop_1",
+        "elementLabel": "Bind data to component prop 1",
+        "eventMappings": [],
+        "inputValues": {
+            "graphqlData": {
+                "binding": {
+                    "address": [
+                        "fetch_evam_data_1",
+                        "output"
+                    ]
+                },
+                "type": "DATA_OUTPUT_BINDING"
             }
         },
         "readEvaluationMode": "EAGER"
@@ -7707,7 +8022,7 @@
   "message" : " Bitte bestätige, dass es sich bei der angezeigten Person um Sie handelt, um fortzufahren.",
   "comment" : ""
 }, {
-  "message" : "&lt;p&gt;&lt;span style=\"font-family: 'arial black', 'avant garde'; font-size: 18pt;\"&gt;F&amp;uuml;r welchen Bereich wird das Ger&amp;auml;t verwendet ?&lt;/span&gt;&lt;/p&gt;",
+  "message" : "&lt;p&gt;&lt;span style=\"font-family: 'arial black', 'avant garde'; font-size: 18pt;\"&gt;F&amp;uuml;r welchen Bereich soll das neue Ger&amp;auml;t verwendet werden?&lt;/span&gt;&lt;/p&gt;",
   "comment" : ""
 }, {
   "message" : "&lt;p&gt;&lt;span style=\"font-family: 'arial black', 'avant garde'; font-size: 18pt;\"&gt;W&amp;auml;hle dein bevorzugtes Betriebssystem f&amp;uuml;r das neue Hardware-Ger&amp;auml;t aus.&amp;nbsp;&lt;/span&gt;&lt;/p&gt;",
@@ -7764,6 +8079,9 @@
   "message" : "Ja, das ist mein aktuelles Gerät!",
   "comment" : ""
 }, {
+  "message" : "Leider Wurde Kein Gerät mit deinen Anforderungen Gefunden",
+  "comment" : ""
+}, {
   "message" : "Nein, Ich möchte nicht zu Apple wechseln",
   "comment" : ""
 }, {
@@ -7774,9 +8092,6 @@
   "comment" : ""
 }, {
   "message" : "Nein, das ist nicht mein aktuelles Gerät!",
-  "comment" : ""
-}, {
-  "message" : "No content to display",
   "comment" : ""
 }, {
   "message" : "Sie sind dabei von einem Apple Gerät zu einem Windows Gerät zu wechseln",
@@ -7854,6 +8169,46 @@
         "name": "Bildschirm",
         "shape": "",
         "valueType": "string"
+    },
+    {
+        "id": "LDcZ47gB43CUWr43MUCvh848a5I",
+        "initialValue": {
+            "type": "JSON_LITERAL",
+            "value": "cmdb_model_categoryLIKE6368c5eac3e12210259f1c84e4013196"
+        },
+        "name": "DynamicFilterModel",
+        "shape": "",
+        "valueType": "string"
+    },
+    {
+        "id": "iEK4247tSAk6479wIOKaWUJzSc",
+        "initialValue": {
+            "type": "JSON_LITERAL",
+            "value": null
+        },
+        "name": "DynamicFilterOperatingSystem",
+        "shape": "",
+        "valueType": "string"
+    },
+    {
+        "id": "zPMhDfFUDkQf43E4JAfrBVbXu",
+        "initialValue": {
+            "type": "JSON_LITERAL",
+            "value": null
+        },
+        "name": "DynamicFilterAreaOfApplication",
+        "shape": "",
+        "valueType": "string"
+    },
+    {
+        "id": "9uuQ4347PSCkXz43OwMFODF3PHV",
+        "initialValue": {
+            "type": "JSON_LITERAL",
+            "value": null
+        },
+        "name": "DynamicFilterScreenSize",
+        "shape": "",
+        "valueType": "string"
     }
 ]</state_properties>
         <style_config>{}</style_config>
@@ -7861,14 +8216,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-05-01 13:04:37</sys_created_on>
         <sys_id>f0d4c1b0c3512210e4d6b132b4013143</sys_id>
-        <sys_mod_count>145</sys_mod_count>
+        <sys_mod_count>158</sys_mod_count>
         <sys_name>Default</sys_name>
         <sys_package display_value="DeviceFinder" source="x_1639660_devicefi">b1a177cfc30d2e90e4d6b132b401315c</sys_package>
         <sys_policy/>
         <sys_scope display_value="DeviceFinder">b1a177cfc30d2e90e4d6b132b401315c</sys_scope>
         <sys_update_name>sys_ux_macroponent_f0d4c1b0c3512210e4d6b132b4013143</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-05-30 08:48:13</sys_updated_on>
+        <sys_updated_on>2025-05-30 12:13:33</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=f0d4c1b0c3512210e4d6b132b4013143"/>
 </record_update>
